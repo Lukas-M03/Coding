@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Custom Clothing</title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, cyan, darkblue);
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 220px;
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .navbar{
+    overflow: hidden;
+    background-color: lightgray;
+}
+.navbar a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+.log{
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+    overflow: hidden;
+}
+.dd{
+    float: left;
+    overflow: hidden;
+}
+.dd .ddbutton{
+    padding: 15px;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+}
+.navbar a:hover, .dd:hover .ddbutton{
+    background-color: navy;
+}
+.ddcontent{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+.ddcontent a{
+    background-color: gray;
+    color: white;
+    float: none;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+.ddcontent a:hover{
+    background-color: rgb(120, 120, 120);
+    z-index: 1;
+    position: relative;
+}
+.dd:hover .ddcontent{
+    display: block;
+}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: rgb(240, 240, 240);
+            color: black;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            margin-top: auto;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+        }
+        @media all and (max-width:500px){
+    .products{
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.socials img{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="Media/CustomClothingLogo.png"></a>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Homepage</a>
+        <div class="dd">
+            <button class="ddbutton">↓ Clothing ↓
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="ddcontent">
+                <a href="viewall.html">View all</a>
+                <a href="upperwear.html">Upper wear</a>
+                <a href="lowerwear.html">Lower wear</a>
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+        <a href="contactus.html">Contact us</a>
+        <a href="aboutus.html">About us</a>
+
+        <div class="log">
+            <a href="login.html">Log in</a>
+        </div>
+        <div class="log">
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <footer>
+        <section class="foot">
+            <section class="socials">
+                <a href="https://www.facebook.com/ulsteruniversity/" ><img src="Media/facebook.png"></a>
+                <a href="https://www.instagram.com/ulsteruni/?hl=en-gb" ><img src="Media/instagram.png"></a>
+                <a href="https://twitter.com/UlsterUni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" ><img src="Media/twitter.png"></a>
+            </section>
+            <section>
+                <p>Copyright &copy;2024; Created for Ulster University</p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+<script>
+    // JavaScript code to handle dropdown functionality
+    document.addEventListener("DOMContentLoaded", function() {
+        var dropdowns = document.querySelectorAll('.dd');
+        
+        dropdowns.forEach(function(dropdown) {
+            var button = dropdown.querySelector('.ddbutton');
+            var content = dropdown.querySelector('.ddcontent');
+            
+            button.addEventListener('click', function() {
+                content.classList.toggle('show');
+            });
+        });
+        
+        window.addEventListener('click', function(event) {
+            dropdowns.forEach(function(dropdown) {
+                if (!dropdown.contains(event.target)) {
+                    var content = dropdown.querySelector('.ddcontent');
+                    content.classList.remove('show');
+                }
+            });
+        });
+    });
+</script>
+
+</html>
